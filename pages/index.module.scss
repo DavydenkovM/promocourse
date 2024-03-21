@@ -1,0 +1,113 @@
+.main {
+  display: grid;
+  grid-template-columns: 13% 87%;
+  grid-template-columns: 6% 94%;
+  grid-template-columns: 0 100%;
+  width: 100vw;
+  // box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+    // 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+  // border-radius: 15px;
+  // z-index: 10;
+  // background: linear-gradient(
+  //     to bottom,
+  //     transparent,
+  //     rgb(var(--background-end-rgb))
+  //   )
+  //   rgb(var(--background-start-rgb));
+  min-height: 100vh;
+
+}
+
+.main-menu {
+  overflow: hidden;
+  background: rgb(73, 57, 113);
+  padding-top: 10px;
+  // border-radius: 15px 0 0 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  // display: grid;
+  // grid-template-columns: 75% 25%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials {
+  padding: 50px 0;
+}
+
+.testimonial-item {
+  // display: flex;
+  // gap: 20px;
+  // padding: 20px;
+  height: 700px;
+  width: 260px;
+  // flex-direction: column;
+  margin-bottom: 64px;
+
+  border: 1px solid #b1d4ef9f;
+  border-radius: 20px;
+
+  // align-items: center;
+  // justify-content: center;
+
+  // background: linear-gradient(-45deg, #C7EBF2, #EBF8F5, #D7EDEB);
+  background: linear-gradient(-45deg, #FCF0C7, #FCE8C9, #FDE0CB, #FDD7CD, #FDCFCF);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.review-content {
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.evgenia {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.my-features-list {
+  margin: 0 auto;
+  margin-top: 50px;
+
+  // background: #141e30;
+  // background: -webkit-linear-gradient(to right, #141e30, #243b55);
+  // background: linear-gradient(to right, #141e30, #243b55); 
+
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  border-radius: 40px;
+  padding: 20px 40px;
+}
+
+.subscribe-btn {
+  margin: 40px 0;
+
+  border-radius: 40px;
+  padding: 20px 40px;
+
+  background: #348F50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: 100% 100%;
+  animation: gradient 15s ease infinite;
+}
